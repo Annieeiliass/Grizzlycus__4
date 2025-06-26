@@ -4,7 +4,6 @@ function fixedObserver(blocks, headerBlocks, callback, callbackHidden = () => {}
     const text_fixed = document.querySelector('.text_fixed');
     const observer = new IntersectionObserver(
         (entries) => {
-            console.log(entries)
             entries.forEach((entry, ind) => {
                 if (entry.isIntersecting) {
                     callback(text_fixed, entry.target, ind)

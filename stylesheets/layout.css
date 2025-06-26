@@ -127,6 +127,22 @@
     letter-spacing: 4px;
     z-index: 9;
 }
+
+.about{
+    #bottom_main{
+        justify-content: center;
+
+        h2{
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+            text-align: center;
+            width: 1020px;
+            max-width: 100%;
+        }
+    }
+}
+
 #bottom_main{
     display: flex;
     width: 100%;
@@ -812,6 +828,75 @@
 
 /* end shop */
 
+
+/* page about */
+
+    #infs_about{
+        --gap_a: 1.4vw;
+
+        .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            gap: var(--gap_a);
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+            #contacts{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 30vw;
+                padding: 3vw 2vw;
+                height: 100%;
+                font-weight: 400;
+
+                h3{
+                    font-size: 24px;
+                }
+
+                #data{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 28vw;
+                    padding: 8vw 0;
+                    font-size: 20px;
+                }
+
+                #time{
+                    font-size: 20px;
+                    padding: 10px 32px;
+                    border-radius: 20px;
+                    border: 1px solid #000000;
+                }
+            }
+
+            #imgs_left{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: var(--gap_a);
+                height: 100%;
+                width: 30vw;
+            }
+
+            #imgs_right{
+                display: flex;
+                height: 100%;
+                width: 31.4vw;
+            }
+        }
+
+    }
+
+/* end about */
 
 /* паралакс */
     .moving-image {
