@@ -4,3 +4,11 @@ history.scrollRestoration = 'manual'; // Отключает восстановл
 
 setCursor('#grizzlycus_link', '../images/cursors/watch_cursor.png')
 setCursor('#bear_funny', '../images/cursors/watch_cursor.png')
+
+
+const slide = {
+    framePrefix: 'artists', 
+    frameCount: 4
+}
+
+AnimationTitle(slide)

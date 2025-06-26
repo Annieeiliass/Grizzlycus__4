@@ -103,12 +103,12 @@
 
 #animation-container{
     display: flex;
-
+    justify-content: start;
+    align-items: center;
     img{
-        transform: scale(0.4);
+
     }
 }
-
 
 
 .main {
@@ -125,6 +125,10 @@
     }
 
     &.not_found{
+        h1{
+            position: relative;
+            opacity: 1;
+        }
         .content{
             display: flex;
             flex-direction: column;

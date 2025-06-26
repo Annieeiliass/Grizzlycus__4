@@ -82,4 +82,4 @@ setCursor('.block4', '../images/cursors/tickets_cursor.png')
 
 
 
-
+AnimationMain()

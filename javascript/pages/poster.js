@@ -57,3 +57,11 @@ history.scrollRestoration = 'manual'; // Отключает восстановл
 
     fixedObserver([block1, block2, block3, block4, block5, block6], headerBlocks, callback, callbackHidden, 0)
 //
+
+
+const slide = {
+    framePrefix: 'poster', 
+    frameCount: 4
+}
+
+AnimationTitle(slide)
