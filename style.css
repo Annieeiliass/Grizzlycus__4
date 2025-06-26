@@ -3,21 +3,3 @@
 @import url("./stylesheets/reset.css");
 
 
-body{
-
-    background-color: var(--background);
-    
-    font-family: 'Pragmatica';
-    font-weight: 400;
-    font-size: 20px;
-    
-    --time: 0.55s;
-    --yellow: #EFFF82;
-    --green: #0BA13B;
-    --background: #F3F3EF;
-    --orange: #FF8743;
-    --light-gray: #F3F3EF;
-    --purple: #B9B2FD;
-    --size-middle: 24px;
-}
-
