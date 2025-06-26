@@ -21,6 +21,10 @@
     &.shop.colored{
         background-color: var(--yellow);
     }
+
+    &.tickets.colored{
+        background-color: var(--orange);
+    }
 }
 
 .header {
@@ -898,6 +902,57 @@
 
 /* end about */
 
+/* page tickets */
+
+    .title2_tickets{
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    #tickets{
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 3vw;
+            align-items: center;
+            width: 100%;
+            position: relative;
+
+            #selected_sector{
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                position: absolute;
+                transition: all .15s ease;
+                opacity: 0;
+                width: 240px;
+                right: 0vw;
+                top: 10vw;
+
+                &.show{
+                    opacity: 1;
+                }
+            }
+
+            #change_sector{
+                width: 42vw;
+                height: auto;
+
+                .cursor{
+                    cursor: pointer;
+                }
+            }   
+        }
+    }
+
+    #form{
+
+    }
+
+/* end tickets */
+
+
 /* паралакс */
     .moving-image {
         position: absolute;
@@ -924,6 +979,28 @@
         top: -2%;
         right: 0;
         width: 30vw;
+    }
+
+    .tickets{
+        #img1 {
+            top: auto;
+            bottom: 5%;
+            left: -4%;
+            width: 24vw;
+        }
+
+        #img2 {
+            top: 0%;
+            left: 45%;
+            width: 16vw;
+        }
+
+        #img3 {
+            top: auto;
+            bottom: 5%;
+            right: 4%;
+            width: 24vw;
+        }
     }
 
     .artists{
