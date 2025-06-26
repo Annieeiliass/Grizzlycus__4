@@ -946,8 +946,179 @@
         }
     }
 
-    #form{
+    #buy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
 
+        #error{
+            font-size: 16px;
+            font-weight: 400;
+            color: #d62d30;
+        }
+    }
+
+    .modal{
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+
+        &.show{
+            display: flex;
+        }
+
+        .content{
+            text-align: center;
+            width: 720px;
+            font-size: 40px;
+            padding: 22px 30px;
+            font-weight: 400;
+            border-radius: 12px;
+            border: 1px solid #000000;
+            background-color: #EFFF82;
+        }
+    }
+
+    #form{
+        margin-top: 60px;
+        height: 100vh;
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 5vw;
+            align-items: center;
+            width: 100%;
+            position: relative;
+
+
+
+            .booking-form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 480px;
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            .form-input, .form-select {
+                width: 100%;
+                padding: 16px 12px;
+                border: 1px solid #000000;
+                border-radius: 12px;
+                font-size: 16px;
+    
+            }
+
+                /* Стили для счетчика билетов */
+            .ticket-counter {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+
+            .counter-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
+                border: 1px solid #000000;
+                font-size: 16px;
+                border-radius: 50%;
+                cursor: pointer;
+
+            }
+
+            .counter-btn:hover {
+                background: #e0e0e0;
+            }
+
+            .counter-input {
+                width: 50px;
+                height: 30px;
+                text-align: center;
+                margin: 0 5px;
+                border: 1px solid #ddd;
+            }
+
+                /* Стили для чекбокса */
+            .form-group.checkbox-group {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                margin: 0;
+            }
+
+            .form-checkbox {
+                border-radius: 50%;
+                display: none;
+                width: 25px;
+                height: 25px;
+            }
+
+            .checkbox-label{
+                display: flex;
+                gap: 10px;
+                cursor: pointer;
+
+                .circle_form{
+                    &.selected{
+                        background-image: url('../images/shared/check.png');
+                        background-position: center; /* Центрирует изображение */
+                        background-size: 80%; /* Устанавливает размер 80% */
+                        background-repeat: no-repeat; /* Предотвращает повторение */
+                    }
+                }
+            }
+
+            .circle_form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
+                border: 1px solid #000000;
+                font-size: 16px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+
+            .form-group{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin: 10px 0;
+
+            }
+
+                /* Стили для кнопки подтверждения */
+            .submit-btn {
+                width: 100%;
+                padding: 12px;
+                background: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-top: 10px;
+                font-family: 'Pragmatica';
+                font-weight: 500;
+            }
+
+            .submit-btn:hover {
+                background: #45a049;
+            }
+        }
     }
 
 /* end tickets */

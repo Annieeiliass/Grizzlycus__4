@@ -210,7 +210,47 @@
             <div class="wrapper">
                 <div class="content">
                     <h2 class="title2_tickets">Заполни данные</h2>
+                    <div class="booking-form">
+                        <select class="form-select">
+                            <option value="disco-bears" selected>Шоу «Диско-мишки»</option>
+                            <option value="new-year-tale">Шоу «Новогодняя сказка»</option>
+                            <option value="experimentus">Шоу «Эксперементус»</option>
+                            <option value="chef-grizzly">Шоу «Шеф Гризли»</option>
+                            <option value="fairy-world">Шоу «Сказочный мир»</option>
+                        </select>
+  
+                        <input type="text" class="form-input name" placeholder="Имя">
+                        
+                        <input type="tel" class="form-input phone" placeholder="Номер телефона">
+                        
+                        <input type="email" class="form-input email" placeholder="E-mail">
+                        
+                        <div class="form-group">
+                            <div class="ticket-counter">
+                                <button class="counter-btn minus">-</button>
+                                <span id="tickets_numb">1</span>
+                                <button class="counter-btn plus">+</button>
+                            </div>
+                            <label class="form-label">Количество билетов</label>
+                        </div>
+                        
+                        <div id="checkbox_form" class="form-group checkbox-group">
+                            <label for="agreement" class="checkbox-label"><span class="circle_form"></span> Согласие на обработку персональных данных</label>
+                        </div>
+                    </div>
+                    <div id="buy">
+                        <button class="button_a">
+                            КУПИТЬ
+                        </button>
+                        <span id="error"></span>
+                    </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="content">
+                Спасибо за покупку! Билеты будут отправлены на вашу почту!
             </div>
         </div>
 
