@@ -202,3 +202,12 @@ buy.addEventListener('click', e => {
         error_span.innerHTML = errorMessage;
     }
 })
+
+
+
+const slide = {
+    framePrefix: 'tickets', 
+    frameCount: 4
+}
+
+AnimationTitle(slide)
