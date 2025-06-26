@@ -223,6 +223,7 @@
     background-color: #222222;
     font-size: 36px;
     color: #FFFFFF;
+    margin-top: 80px;
     padding: 4vw 0;
 
     .content{
@@ -641,7 +642,6 @@
 /* page artists */
 
 #infs{
-    margin-bottom: 100px;
     .content{
         display: flex;
         flex-direction: column;
