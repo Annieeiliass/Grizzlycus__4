@@ -43,17 +43,17 @@ history.scrollRestoration = 'manual'; // Отключает восстановл
     const block3 = document.querySelector('.block3');
     const block4 = document.querySelector('.block4');
     const headerBlocks = {
-        'block1': 'АФИША',
-        'block2': 'АРТИСТЫ',
-        'block3': 'МАГАЗИН',
-        'block4': 'БИЛЕТЫ',
+        'block1': 'poster',
+        'block2': 'artists',
+        'block3': 'shop',
+        'block4': 'tickets',
     }
 
     const callback = (text_fixed, target, ind) => {
         const className = target.className.split(' ')[1]
         const title = headerBlocks[className]
         if(title){
-            text_fixed.innerHTML = title;
+            text_fixed.firstElementChild.src = './images/titles/' + title + '.png'
         }
     }
 
@@ -78,3 +78,8 @@ setCursor('.block1', '../images/cursors/poster_cursor.png')
 setCursor('.block2', '../images/cursors/artist_cursor.png')
 setCursor('.block3', '../images/cursors/merch_cursor.png')
 setCursor('.block4', '../images/cursors/tickets_cursor.png')
+
+
+
+
+
