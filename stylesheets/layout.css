@@ -641,44 +641,44 @@
 
 /* page artists */
 
-#infs{
-    .content{
+    #infs{
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+        }
+    }
+
+    .desc{
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+
+        h2{
+            font-size: 40px;
+            line-height: 44px;
+            font-weight: 500;
+            padding-right: 4vw;
+            margin-top: -6px;
+        }
+
+        p{
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+
+    #grizzlycus, #bear_funny{
         display: flex;
-        flex-direction: column;
-        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        img{
+            height: 100%;;
+            width: 84vw;
+            max-width: 90vw;
+            object-fit: contain;
+        }
     }
-}
-
-.desc{
-    display: grid;
-    grid-template-columns: 1fr 1fr;    
-
-    h2{
-        font-size: 40px;
-        line-height: 44px;
-        font-weight: 500;
-        padding-right: 4vw;
-        margin-top: -6px;
-    }
-
-    p{
-        font-size: 24px;
-        font-weight: 400;
-    }
-}
-
-#grizzlycus, #bear_funny{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    img{
-        height: 100%;;
-        width: 84vw;
-        max-width: 90vw;
-        object-fit: contain;
-    }
-}
 
 /* carousel */
 
@@ -718,6 +718,99 @@
 /* */
    
 /* end artists */
+
+
+
+/* page shop */
+
+    #products{
+        --time_pr: .5s;
+        --gap_pr: 1.4vw;
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap_pr);
+            width: 100%;
+        }
+        .product{
+    
+    
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            aspect-ratio: 1.05/1;
+            border-radius: 2%;
+            border: 1px solid #000000;
+            cursor: pointer;
+            transition: all var(--time_pr);
+    
+            .sign{
+                display: flex;
+                flex-direction: column;
+                left: 1.4vw;
+                bottom: 1.4vw;
+                position: absolute;
+                color: #000000;
+                transition: all var(--time_pr);
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+    
+            .bg{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #000000;
+                height: 65%;
+                width: 60%;
+                border-radius: 35%;
+                display: flex;
+    
+                >img{
+                    height: 76%;
+                    object-fit: contain;
+                    transition: all var(--time_pr);
+                }
+            }
+    
+            &:hover{
+                background-color: #000000;
+    
+                .bg{
+                    >img{
+                        transform: scale(1.2);
+                    }
+                }
+                .sign{
+                    left: var(--gap_pr);
+                    bottom: var(--gap_pr);
+                    position: absolute;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    
+        #products1, #products3{
+            width: 100%;
+            display: grid;
+            gap: var(--gap_pr);
+            grid-template-columns: 1fr 1fr;
+        }
+    
+        #products2{
+            width: 100%;
+            display: grid;
+            gap: var(--gap_pr);
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+
+/* end shop */
 
 
 /* паралакс */
