@@ -441,6 +441,15 @@
         }
     }
 
+    #buy{
+        position: relative;
+    }
+
+    #error{
+        position: absolute;
+        top: 50px;
+    }
+
     .title2_tickets{
         text-align: center;
     }
