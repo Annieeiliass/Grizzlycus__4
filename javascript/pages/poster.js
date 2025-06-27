@@ -1,4 +1,4 @@
-history.scrollRestoration = 'manual'; // Отключает восстановление позиции
+// history.scrollRestoration = 'manual'; // Отключает восстановление позиции
 
 // боковая навигация
     const a_1 = document.querySelector('#a_1')
@@ -14,7 +14,17 @@ history.scrollRestoration = 'manual'; // Отключает восстановл
     const a_6 = document.querySelector('#a_6')
     const block6 = document.querySelector('.block6')
 
-    RightNav([[a_1, block1], [a_2, block2], [a_3, block3], [a_4, block4], [a_5, block5], [a_6, block6]])
+   
+    function checkSize(){
+        if(window.innerWidth < 450){
+        }
+        else{
+            RightNav([[a_1, block1], [a_2, block2], [a_3, block3], [a_4, block4], [a_5, block5], [a_6, block6]])
+        }
+    }
+
+    checkSize()
+
 //
 
 

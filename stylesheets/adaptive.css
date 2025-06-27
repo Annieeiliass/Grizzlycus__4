@@ -1,1 +1,386 @@
 /* мобильная версия */
+
+
+
+@media (max-width: 450px) {
+    
+    .header {
+        .content{  
+            .sign_circus{
+                display: none;
+            }
+            
+            .open_menu{
+                display: block;
+                z-index: 99;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            
+            a{
+                color: #EFFF82;
+                font-size: 40px;
+                font-weight: 500;
+            }
+
+            .circle{
+                .sign{
+                    fill: #EFFF82;
+                }
+            }
+
+            .comma{
+                display: none;
+            }
+
+            .logo{
+                width: 30vw;
+            }
+
+            .menu {
+                display: none;
+
+
+                &.show{
+                    position: fixed;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: #222222;
+                    color: #EFFF82;
+
+                    ul{
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    #tag{
+        display: none;
+    }
+
+    #welcome{
+
+        .content{
+            gap: 6vh;
+        }
+
+        img{
+            width: 90%;
+        }
+
+        .sign{
+            font-size: 20px;
+            font-weight: 400;
+            min-width: 0;
+            width: 50%;
+
+            &.left{
+                text-align: center;
+
+            }
+
+            &.right{
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+    }
+
+    #center_welcome{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    #bottom_main{
+        justify-content: center;
+        #timer{
+            display: none;
+        }
+    }
+    #title_welcome{
+        font-size: 24px;
+    }
+
+    #animation-container{
+        img{
+            width: 80vw;
+        }
+    }
+
+    .block{
+        .fixed_content{
+            img{
+                width: 66vw;
+            }
+
+            a{
+                padding: 4vh 2vh;
+            }
+        }
+    }
+
+    .fixed{
+        .rightNav{
+            display: none;
+        }
+        .text_fixed{
+            img{
+                width: 80vw;
+            }
+        }
+    }
+
+    .poster{
+        .text_fixed{
+            width: 80%;
+        }
+
+
+        .block{
+            .fixed_content{
+                width: 90%;
+                img{
+                    width: 36vw;
+                    object-fit: contain;
+                
+                }
+                &.block1{
+                    img{
+                        &:nth-child(1){
+                            left: 0;
+                            top: 0;
+                        }
+                        &:nth-child(2){
+                            left: 0;
+                            top: auto;
+                            bottom: 20vw;
+                        }
+                        &:nth-child(3){
+                            right: 0;
+                            top: auto;
+                            bottom: 0;
+                        }
+                    }
+                }
+                &.block2{
+                    img{
+                        &:nth-child(1){
+                            left: 0;
+                            top: 0;
+                        }
+                        &:nth-child(2){
+                            left: auto;
+                            right: 0;
+                            top: 20vw;
+                        }
+                        &:nth-child(3){
+                            right: auto;
+                            left: 20vw;
+                            top: auto;
+                            bottom: 0;
+                        }
+                    }
+                }
+                &.block3{
+                    img{
+                        &:nth-child(1){
+                            left: 0;
+                            top: 0;
+                        }
+                        &:nth-child(2){
+                            left: 0;
+                            top: auto;
+                            bottom: 26vw;
+                        }
+                        &:nth-child(3){
+                            right: 0;
+                            top: auto;
+                            bottom: 0;
+                        }
+                    }
+                }
+                &.block4{
+                    img{
+                        &:nth-child(1){
+                            left: 0;
+                            top: 0;
+                        }
+                        &:nth-child(2){
+                            left: auto;
+                            right: 0;
+                            top: 20vw;
+                        }
+                        &:nth-child(3){
+                            right: auto;
+                            left: 20vw;
+                            top: auto;
+                            bottom: 0;
+                        }
+                    }
+                }
+                &.block5{
+                    img{
+                        &:nth-child(1){
+                            left: auto;
+                            right: 6vw;
+                            top: 0;
+                        }
+                        &:nth-child(2){
+                            left: 0;
+                            top: auto;
+                            bottom: 20vw;
+                        }
+                        &:nth-child(3){
+                            right: 0;
+                            top: auto;
+                            bottom: 0;
+                        }
+                    }
+                }
+                &.block6{
+                    img{
+                        &:nth-child(1){
+                            left: 15vw;
+                            top: 0;
+                            transform: none;
+                        }
+                        &:nth-child(2){
+                            left: 0;
+                            top: auto;
+                            bottom: 16vw;
+                        }
+                        &:nth-child(3){
+                            right: 0;
+                            top: auto;
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .poster, .artists, .shop, .tickets {
+        #bottom_main{
+            display: none;
+        }
+    }
+
+    #img1{
+        width: 20vh;
+    }
+
+    #img2{
+        width: 30vh;
+        left: 0;
+        top: auto;
+        bottom: 0;
+    }
+
+    #img3{
+        top: auto;
+        bottom: 12vh;
+        width: 33vh;
+        right: -5vh;
+    }
+
+    .artists{
+        #img1{
+            top: 42vh;
+            width: 32vh;
+            left: -5vh;
+        }
+
+        #img2{
+            width: 20vh;
+            left: auto;
+            right: 4vh;
+            top: 10vh;
+        }
+
+        #img3{
+            top: auto;
+            bottom: 2vh;
+            width: 24vh;
+            right: -3vh;
+        }
+    }
+
+    .shop{
+        #img1{
+            top: 19vh;
+            width: 26vh;
+            left: 0vh;
+        }
+
+        #img2{
+            width: 30vh;
+            left: auto;
+            right: -2vh;
+            top: 2vh;
+        }
+
+        #img3{
+            top: auto;
+            bottom: 20vh;
+            width: 24vh;
+            right: 2vh;
+        }
+    }
+
+    .tickets{
+        #img1{
+            top: auto;
+            bottom: 18vh;
+            width: 26vh;
+            left: -2vh;
+        }
+
+        #img2{
+            width: 28vh;
+            left: auto;
+            right: 0vh;
+            top: 3vh;
+        }
+
+        #img3{
+            top: auto;
+            bottom: 4vh;
+            width: 26vh;
+            right: 0vh;
+        }
+    }
+
+    #contact{
+        gap: 8px;
+    }
+
+    #telegram_logo{
+        width: 29px;
+        height: 29px;
+    }
+
+    .bottom{
+        font-size: 20px;
+        font-weight: 400;
+
+        .content{
+            row-gap: 12px;
+            >:nth-child(n){
+                width: 100%;
+            }
+            >:nth-child(2n){
+                justify-content: flex-start;
+            }
+        }
+    }
+}

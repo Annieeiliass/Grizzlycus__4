@@ -51,3 +51,44 @@ logo_header.addEventListener('mouseenter', () => {
 logo_header.addEventListener('mouseleave', () => {
     logo_header.firstElementChild.lastElementChild.style.fill = '#000000';
 })
+
+
+
+
+const open_menu = document.querySelector('.open_menu')
+
+open_menu.addEventListener('click', e => {
+    if(header.classList.contains('show')){
+        open_menu.innerHTML = 'Меню'
+        open_menu.style.color = '#000000'
+        document.body.style.overflow = ''
+        logo_header.firstElementChild.lastElementChild.style.fill = '#000000'
+        logo_header.firstElementChild.firstElementChild.style.stroke = '#000000'
+    }
+    else{
+        open_menu.innerHTML = 'Закрыть'
+        open_menu.style.color = '#EFFF82'
+        document.body.style.overflow = 'hidden'
+        logo_header.firstElementChild.lastElementChild.style.fill = '#EFFF82'
+        logo_header.firstElementChild.firstElementChild.style.stroke = '#EFFF82'
+    }
+    header.classList.toggle('show')
+})
+
+
+function checkSize(){
+    if(window.innerWidth < 450){
+        header.removeEventListener('mouseleave', onLeave)
+        headers.forEach(h => h.removeEventListener('mouseenter', onEnter))
+
+    }
+    else{
+        header.addEventListener('mouseleave', onLeave)
+        headers.forEach(h => h.addEventListener('mouseenter', onEnter))
+    }
+}
+
+checkSize()
+window.addEventListener('resize', e => {
+    checkSize()
+})

@@ -32,7 +32,17 @@ history.scrollRestoration = 'manual'; // Отключает восстановл
     ];
 
     const photoContainer = document.querySelector('.main');
-    getPhotoContainer(photoContainer)()
+
+    function checkSize(){
+        if(window.innerWidth < 450){
+        }
+        else{
+           getPhotoContainer(photoContainer)()
+        }
+    }
+
+    checkSize()
+    
 //
 
 

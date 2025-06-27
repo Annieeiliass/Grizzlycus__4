@@ -9,7 +9,7 @@ function RightNav(blocks){
     const scrollY = window.scrollY || window.pageYOffset;
     
     const targetScroll = scrollY + elementRect.top - (viewportHeight / 2) + (elementRect.height / 2);
-  
+    
     window.scrollTo({
       top: targetScroll,
       behavior: "smooth"
