@@ -434,6 +434,7 @@
                 height: 60vh;
 
                 #data{
+                    gap: 2vh;
                     height: auto;
                 }
             }
