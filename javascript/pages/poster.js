@@ -1,4 +1,4 @@
-// history.scrollRestoration = 'manual'; // Отключает восстановление позиции
+history.scrollRestoration = 'manual'; // Отключает восстановление позиции
 
 // боковая навигация
     const a_1 = document.querySelector('#a_1')

@@ -783,6 +783,11 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+
+        .mobile{
+            display: none;
+        }
+
         img{
             height: 100%;;
             width: 84vw;

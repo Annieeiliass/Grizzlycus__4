@@ -276,11 +276,11 @@
     }
 
     #img1{
-        width: 20vh;
+        width: 44vw;
     }
 
     #img2{
-        width: 30vh;
+        width: 66vw;
         left: 0;
         top: auto;
         bottom: 0;
@@ -289,19 +289,19 @@
     #img3{
         top: auto;
         bottom: 12vh;
-        width: 33vh;
+        width: 72vw;
         right: -5vh;
     }
 
     .artists{
         #img1{
             top: 42vh;
-            width: 32vh;
+            width: 70vw;
             left: -5vh;
         }
 
         #img2{
-            width: 20vh;
+            width: 44vw;
             left: auto;
             right: 4vh;
             top: 10vh;
@@ -310,7 +310,7 @@
         #img3{
             top: auto;
             bottom: 2vh;
-            width: 24vh;
+            width: 52vw;
             right: -3vh;
         }
     }
@@ -318,12 +318,12 @@
     .shop{
         #img1{
             top: 19vh;
-            width: 26vh;
+            width: 57vw;
             left: 0vh;
         }
 
         #img2{
-            width: 30vh;
+            width: 66vw;
             left: auto;
             right: -2vh;
             top: 2vh;
@@ -332,7 +332,7 @@
         #img3{
             top: auto;
             bottom: 20vh;
-            width: 24vh;
+            width: 52vw;
             right: 2vh;
         }
     }
@@ -341,12 +341,12 @@
         #img1{
             top: auto;
             bottom: 18vh;
-            width: 26vh;
+            width: 57vw;
             left: -2vh;
         }
 
         #img2{
-            width: 28vh;
+            width: 61vw;
             left: auto;
             right: 0vh;
             top: 3vh;
@@ -355,7 +355,7 @@
         #img3{
             top: auto;
             bottom: 4vh;
-            width: 26vh;
+            width: 57vw;
             right: 0vh;
         }
     }
@@ -382,5 +382,44 @@
                 justify-content: flex-start;
             }
         }
+    }
+
+    .button_a{
+        padding: 6px 20px;
+    }
+
+    #grizzlycus, #bear_funny {
+        flex-direction: column;
+        gap: 10px;
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .mobile{
+            display: block;
+        }
+    }
+    
+    #infs{
+        .content{
+            gap: 40px;
+        }
+    }
+
+    .carousel-container{
+        height: 100vw;
+    }
+    
+    .carousel-slide{
+        flex: 0 0 78vw;;
+        img{
+            width: auto;
+        }
+    }
+
+    .desc{
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }

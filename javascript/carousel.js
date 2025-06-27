@@ -127,6 +127,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function init() {
         updatePosition();
+
+        startAutoScroll();
+
+        if(window.innerWidth < 450){
+            return
+        }
         
         track.addEventListener('mousedown', handleMouseDown);
         window.addEventListener('mousemove', handleMouseMove);
@@ -144,8 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         track.addEventListener('touchend', handleMouseUp);
         
-        // Запускаем автоскролл при загрузке
-        startAutoScroll();
+
     }
     
     init();
