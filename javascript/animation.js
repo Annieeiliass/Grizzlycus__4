@@ -51,7 +51,7 @@ function AnimationMain(){
         let cicle = 1;
         const end = slides[currentSlide].end;
         const start = slides[currentSlide].start;
-
+        
         frameInterval = setInterval(() => {
             currentFrame++;
             if((currentFrame === frameCount - end) && (cicle === 1)){
@@ -60,7 +60,7 @@ function AnimationMain(){
             }
             if (currentFrame > frameCount) currentFrame = 1;
             frameImg.src = './images/animation/home/' + `${framePrefix}${currentFrame}.png`;
-        }, 150);
+        }, 130);
     }
     
     function stopFrameLoop() {
@@ -76,7 +76,7 @@ function AnimationMain(){
         clearTimeout(slideTimeout);
         slideTimeout = setTimeout(() => {
             showSlide((currentSlide + 1) % slides.length);
-        }, 7000);
+        }, 10000);
     }
     
     container.onclick = () => {
