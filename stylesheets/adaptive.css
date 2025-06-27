@@ -418,6 +418,28 @@
         }
     }
 
+    #products{
+        .product{
+            aspect-ratio: auto;
+            width: 100%;
+            height: 110vw;
+
+            .bg{
+                >img{
+                    width: 90%;
+                }
+            }
+        }
+
+        #products1, #products3{
+            grid-template-columns: 1fr;
+        }
+
+        #products2{
+            grid-template-columns: 1fr;
+        }
+    }
+
     .desc{
         grid-template-columns: 1fr;
         gap: 20px;

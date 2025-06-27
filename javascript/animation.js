@@ -2,8 +2,8 @@
 function AnimationMain(){
 
     const slides = [
-        { framePrefix: 'artist', frameCount: 18, bg: '#EFFF82' },
-        { framePrefix: 'funny', frameCount: 1, bg: '#FF8743' },
+        { framePrefix: 'artist', frameCount: 1, bg: '#EFFF82' },
+        { framePrefix: 'funny', frameCount: 4, bg: '#FF8743' },
         { framePrefix: 'quirky', frameCount: 1, bg: '#B9B2FD' },
         { framePrefix: 'wild', frameCount: 1, bg: '#0BA13B' }
     ];
@@ -50,7 +50,7 @@ function AnimationMain(){
             currentFrame++;
             if (currentFrame > frameCount) currentFrame = 1;
             frameImg.src = './images/animation/home/' + `${framePrefix}${currentFrame}.png`;
-        }, 90);
+        }, 590);
     }
     
     function stopFrameLoop() {
