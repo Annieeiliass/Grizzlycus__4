@@ -151,7 +151,7 @@
             align-items: center;
             justify-content: center;
             gap: 2vh;
-            height: 100;
+            height: 100vh;
         }
         #bottom_main{
             position: relative;
@@ -1181,6 +1181,8 @@
                 align-items: center;
                 width: 25px;
                 height: 25px;
+                min-height: 25px;
+                min-width: 25px;
                 border: 1px solid #000000;
                 font-size: 16px;
                 border-radius: 50%;
