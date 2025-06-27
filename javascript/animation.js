@@ -2,8 +2,8 @@
 function AnimationMain(){
 
     const slides = [
-        { framePrefix: 'artist', frameCount: 1, bg: '#EFFF82' },
-        { framePrefix: 'funny', frameCount: 4, bg: '#FF8743' },
+        { framePrefix: 'artist', frameCount: 19, bg: '#EFFF82' },
+        { framePrefix: 'funny', frameCount: 1, bg: '#FF8743' },
         { framePrefix: 'quirky', frameCount: 1, bg: '#B9B2FD' },
         { framePrefix: 'wild', frameCount: 1, bg: '#0BA13B' }
     ];
@@ -66,7 +66,7 @@ function AnimationMain(){
         clearTimeout(slideTimeout);
         slideTimeout = setTimeout(() => {
             showSlide((currentSlide + 1) % slides.length);
-        }, 3000);
+        }, 31000);
     }
     
     container.onclick = () => {

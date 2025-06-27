@@ -418,6 +418,19 @@
         }
     }
 
+    .about{
+
+        .main{
+            .content{
+                justify-content: flex-start;
+            }
+        }
+        #title_main{
+            top: 30%;
+            height: 40vh;
+        }
+    }
+
     #products{
         .product{
             aspect-ratio: auto;
