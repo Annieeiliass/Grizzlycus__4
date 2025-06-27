@@ -4,10 +4,10 @@
 function AnimationMain(){
 
     const slides = [
-        { framePrefix: 'artist', frameCount: 20, start: 5, end: 5, bg: '#EFFF82' },
-        { framePrefix: 'funny', frameCount: 18, start: 5, end: 3, bg: '#FF8743' },
-        { framePrefix: 'quirky', frameCount: 20, start: 5, end: 3, bg: '#B9B2FD' },
-        { framePrefix: 'wild', frameCount: 17, start: 5, end: 3, bg: '#0BA13B' }
+        { framePrefix: 'artist', frameCount: 30, start: 5, end: 5, bg: '#EFFF82' },
+        { framePrefix: 'funny', frameCount: 26, start: 5, end: 3, bg: '#FF8743' },
+        { framePrefix: 'quirky', frameCount: 33, start: 4, end: 3, bg: '#B9B2FD' },
+        { framePrefix: 'wild', frameCount: 25, start: 4, end: 3, bg: '#0BA13B' },
     ];
     
     const container = document.getElementById('animation-container');
@@ -60,7 +60,7 @@ function AnimationMain(){
             }
             if (currentFrame > frameCount) currentFrame = 1;
             frameImg.src = './images/animation/home/' + `${framePrefix}${currentFrame}.png`;
-        }, 130);
+        }, 140);
     }
     
     function stopFrameLoop() {
@@ -76,7 +76,7 @@ function AnimationMain(){
         clearTimeout(slideTimeout);
         slideTimeout = setTimeout(() => {
             showSlide((currentSlide + 1) % slides.length);
-        }, 10000);
+        }, 12000);
     }
     
     container.onclick = () => {
@@ -104,5 +104,5 @@ function AnimationTitle(slide){
         frameImg.src = '../images/animation/titles/' + `${framePrefix}${currentFrame}.png`;
     }
 
-    setInterval(nextFrame, 120); 
+    setInterval(nextFrame, 140); 
 }

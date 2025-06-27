@@ -471,6 +471,9 @@
 
     .main {
         &.not_found {
+
+
+
             height: 100%;
             .content{
                 margin: 4vh 0 8vh 0;
@@ -488,7 +491,10 @@
     }
 
     .about{
-
+            
+        #animation-container{
+            height: auto;
+        }
         .main{
             .content{
                 justify-content: flex-start;
@@ -501,6 +507,9 @@
     }
 
     #products{
+        .content{
+            gap: 3vh;
+        }
         .product{
             aspect-ratio: auto;
             width: 100%;
@@ -515,10 +524,12 @@
 
         #products1, #products3{
             grid-template-columns: 1fr;
+            row-gap: 3vh;
         }
 
         #products2{
             grid-template-columns: 1fr;
+            row-gap: 3vh;
         }
     }
 
