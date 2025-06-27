@@ -116,14 +116,37 @@
         }
     }
 
+    .wrap{
+        .mobile{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .block{
+            .fixed_content{
+                .mobile{
+                    a{
+                        padding: 2vh;
+                        width: auto;
+                    }
+                }    
+            }
+        }
+    }
+
     .block{
+        width: 100%;
         .fixed_content{
+            position: relative;
             img{
                 width: 66vw;
             }
 
             a{
                 padding: 4vh 2vh;
+
+             
             }
         }
     }
@@ -480,7 +503,22 @@
     }
 
 
+
+
     .main {
+
+        .block {
+            .fixed_content {
+
+               
+
+                &.block1 {
+                    position: relative;
+                }
+            }
+        }
+
+
         &.not_found {
 
 
