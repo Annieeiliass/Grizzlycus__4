@@ -587,3 +587,16 @@
         gap: 20px;
     }
 }
+
+
+@media (max-width: 1460px) {
+    .bottom{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .bottom{
+        font-size: 28px;
+    }
+}
