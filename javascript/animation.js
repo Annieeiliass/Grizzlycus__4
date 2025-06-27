@@ -1,11 +1,13 @@
 
+
+
 function AnimationMain(){
 
     const slides = [
-        { framePrefix: 'artist', frameCount: 19, bg: '#EFFF82' },
-        { framePrefix: 'funny', frameCount: 1, bg: '#FF8743' },
-        { framePrefix: 'quirky', frameCount: 1, bg: '#B9B2FD' },
-        { framePrefix: 'wild', frameCount: 1, bg: '#0BA13B' }
+        { framePrefix: 'artist', frameCount: 20, start: 5, end: 5, bg: '#EFFF82' },
+        { framePrefix: 'funny', frameCount: 18, start: 5, end: 3, bg: '#FF8743' },
+        { framePrefix: 'quirky', frameCount: 20, start: 5, end: 3, bg: '#B9B2FD' },
+        { framePrefix: 'wild', frameCount: 17, start: 5, end: 3, bg: '#0BA13B' }
     ];
     
     const container = document.getElementById('animation-container');
@@ -46,11 +48,19 @@ function AnimationMain(){
         currentFrame = 1;
         frameImg.src = './images/animation/home/' + `${framePrefix}${currentFrame}.png`;
     
+        let cicle = 1;
+        const end = slides[currentSlide].end;
+        const start = slides[currentSlide].start;
+
         frameInterval = setInterval(() => {
             currentFrame++;
+            if((currentFrame === frameCount - end) && (cicle === 1)){
+                cicle++;
+                currentFrame = start;
+            }
             if (currentFrame > frameCount) currentFrame = 1;
             frameImg.src = './images/animation/home/' + `${framePrefix}${currentFrame}.png`;
-        }, 590);
+        }, 150);
     }
     
     function stopFrameLoop() {
@@ -66,7 +76,7 @@ function AnimationMain(){
         clearTimeout(slideTimeout);
         slideTimeout = setTimeout(() => {
             showSlide((currentSlide + 1) % slides.length);
-        }, 31000);
+        }, 7000);
     }
     
     container.onclick = () => {
