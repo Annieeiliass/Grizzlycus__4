@@ -1,0 +1,10 @@
+
+
+
+
+#animation-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 70vh;
+}
