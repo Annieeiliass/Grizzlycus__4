@@ -408,6 +408,7 @@
     }
 
     .carousel-container{
+        touch-action: auto;
         height: 100vw;
     }
     
