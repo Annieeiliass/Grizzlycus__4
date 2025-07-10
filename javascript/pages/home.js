@@ -39,10 +39,10 @@ history.scrollRestoration = 'manual'; // Отключает восстановл
         else{
             getPhotoContainer(photoContainer)()
            
-            setCursor('.block1', '../images/cursors/poster_cursor.png')
-            setCursor('.block2', '../images/cursors/artist_cursor.png')
-            setCursor('.block3', '../images/cursors/merch_cursor.png')
-            setCursor('.block4', '../images/cursors/tickets_cursor.png')
+            setCursor('.block1', './images/cursors/poster_cursor.png')
+            setCursor('.block2', './images/cursors/artist_cursor.png')
+            setCursor('.block3', './images/cursors/merch_cursor.png')
+            setCursor('.block4', './images/cursors/tickets_cursor.png')
 
         }
     }
