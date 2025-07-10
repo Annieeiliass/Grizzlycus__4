@@ -550,8 +550,12 @@
             }
         }
         #title_main{
-            top: 35%;
-            height: 45vh;
+            top: 0%;
+            margin-top: 60%;
+            height: 100%;
+        }
+        #bottom_main{
+            margin-bottom: 20px;
         }
     }
 
